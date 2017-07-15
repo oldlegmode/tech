@@ -1,0 +1,15 @@
+$mobile-min: 320px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1024px;
+$desktop-min: 1025px;
+
+@media only screen and (min-width : $mobile-min) and (max-width : $mobile-max) {
+
+}
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+}
+@media (min-width: $desktop-min) {
+
+}

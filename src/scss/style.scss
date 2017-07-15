@@ -1,0 +1,26 @@
+$version: "1.0.0";
+
+@charset "UTF-8";
+
+// Reset and dependencies
+// Core variables and mixins
+@import "lib/_mixins";
+@import "lib/_normalize";
+
+
+@import "_variables";
+@import "_fonts";
+@import "_media";
+@import "_scafolding";
+
+
+// Components
+@import "modules/_page-header";
+@import "modules/_page-footer";
+@import "modules/_slider";
+@import "modules/_portfolio";
+@import "modules/_our-features";
+@import "modules/_feedback";
+@import "modules/_main-arrow";
+
+

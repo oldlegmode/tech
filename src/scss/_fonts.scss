@@ -1,0 +1,26 @@
+@font-face { 
+  font-family: 'Myriad Pro'; 
+  src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+       url('../fonts/MyriadPro-Regular.woff') format('woff'),
+       url('../fonts/MyriadPro-Regular.ttf') format('truetype'); /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Myriad Pro'; 
+  src: url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+       url('../fonts/MyriadPro-Bold.woff') format('woff'),
+       url('../fonts/MyriadPro-Bold.ttf') format('truetype'); /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+  font-weight: bold; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Myriad Pro'; 
+  src: url('../fonts/MyriadPro-It.woff2') format('woff2'),
+       url('../fonts/MyriadPro-It.woff') format('woff'),
+       url('../fonts/MyriadPro-It.ttf') format('truetype'); /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+  font-weight: normal; 
+  font-style: italic; 
+}

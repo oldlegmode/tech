@@ -1,0 +1,76 @@
+$mobile-min: 320px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1024px;
+$desktop-min: 1025px;
+
+.page-main {
+  position: relative;
+  &__arrow {
+    position: absolute;
+    bottom: 6px;
+    right: 5%;
+    z-index: 900;
+
+    display: block;
+    border: 3px solid $yellow;
+    width: 60px;
+    height: 60px;
+    border-radius: 7px;
+
+    cursor: pointer;
+    @media only screen and (min-width : $mobile-min) and (max-width : $mobile-max) {
+      transform: scale(0.6);
+    }
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+      transform: scale(0.8);
+    }
+  }
+  &__arrow-link {
+    display: inline-block;
+
+    position: relative;
+    left: 50%;
+    top: 50%;
+
+    width: 4px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -2px;
+
+    background-color: $yellow;
+
+    &::after {
+      content: '';
+
+      //position: absolute;
+
+      display: inline-block;
+
+      width: 4px;
+      height: 20px;
+
+      background-color: $yellow;
+
+      transform: rotate(-45deg) translate(24px, -15px);
+
+      //transform: 
+    }
+    &::before {
+      content: '';
+
+      //position: absolute;
+
+      display: inline-block;
+
+      width: 4px;
+      height: 20px;
+
+      background-color: $yellow;
+
+      transform: rotate(45deg) translate(-7px, 2px);
+
+      //transform: 
+    }
+  }
+}

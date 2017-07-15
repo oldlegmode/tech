@@ -1,0 +1,23 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: 1.4rem;
+
+  overflow-X: hidden;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #8198a0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}

@@ -1,0 +1,33 @@
+section.page-main__feedback-container(id="feedback")
+  .page-main__feedback-wrap
+    h2.page-main__feedback-header Оставьте отзыв
+    p.page-main__feedback-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum sint, harum rem accusamus exercitationem, dignissimos dolore numquam, dolorem possimus saepe ducimus laborum!
+    .page-main__feedback-inner
+      .page-main__feedback-contacts-wrap(id="contacts")
+        ul.page-main__contacts-list
+          li.page-main__contacts-header Наш адрес
+            ul.page-main__contacts-adress-list
+              li.page-main__contacts-adress-li г.Минск, ул.Скрыганова, 6А, 4 этаж
+          li.page-main__contacts-header Звоните
+            ul.page-main__contacts-adress-list
+              li.page-main__contacts-adress-li +375 (29) 123-45-67, +375 (29) 123-45-67
+          li.page-main__contacts-header Пишите
+            ul.page-main__contacts-adress-list
+              li.page-main__contacts-adress-li info@promo-webcom.by
+      form.page-main__feedback-form(id="form-feedback" method="post")
+        label.page-main__feedback-label(for="input-name") Ваше имя
+          input(type="text" id="input-name" placeholder="Иванов Иван" pattern="^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я]{1,15}$" required).page-main__feedback-input
+        label.page-main__feedback-label(for="input-email") E-mail
+          input(type="email" id="input-email" placeholder="example@mysite.com" pattern="\S[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{1,4}\S" required).page-main__feedback-input
+        label.page-main__feedback-label(for="input-position") Ваша должность
+          input(type="text" id="input-position" placeholder="Должность" pattern="^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я]{1,15}$" required).page-main__feedback-input
+        label.page-main__feedback-label(for="input-message") Отзыв
+          textarea(type="text" id="input-message" placeholder
+="Ваше сообщение" rows='5' pattern="^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я]{1,15}$" required).page-main__feedback-input.page-main__feedback-input--textarea
+        label.page-main__feedback-label.page-main__feedback-label--file(for="input-photo") Фото
+          span(id="span-file").page-main__feedback-span-file +
+          input(type="file" id="input-photo").page-main__feedback-input.page-main__feedback-input--file
+        label.page-main__feedback-label.page-main__feedback-label--captcha(for="input-captcha" required) Введите код с картинки
+          input(type="text" id="input-captcha" pattern="[a-z0-9]" required).page-main__feedback-input
+          img(src="img/feedback/captcha.jpg", alt="captcha").page-main__feedback-captcha-img
+        input(type="submit" id="input-submit" value="Отправить").page-main__feedback-submit
